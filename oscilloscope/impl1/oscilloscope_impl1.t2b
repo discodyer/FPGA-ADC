@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "/home/cody/Project/FPGA-ADC/oscilloscope"  

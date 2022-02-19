@@ -1,0 +1,12 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Feb 19 23:10:03 2022 *
+NOTE DESIGN NAME: template *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS led2 : M12 : out *
+NOTE PINS led1 : N13 : out *
+NOTE PINS clk : C1 : in *
+NOTE PINS rst_n : L14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

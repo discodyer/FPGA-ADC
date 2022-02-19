@@ -1,0 +1,1 @@
+@W: MT529 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Found inferred clock template|clk which controls 24 sequential elements including cnt[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

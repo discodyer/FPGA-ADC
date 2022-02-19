@@ -1,0 +1,993 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "oscilloscope_impl1.ngd" -o "oscilloscope_impl1_map.ncd" -pr "oscilloscope_impl1.prf" -mp "oscilloscope_impl1.mrp" -lpf "/home/cody/Project/FPGA-ADC/oscilloscope/impl1/oscilloscope_impl1.lpf" -lpf "/home/cody/Project/FPGA-ADC/oscilloscope/oscilloscope.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.12.1.454.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: oscilloscope_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     24 out of  4635 (1%)
+      PFU registers:           24 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        21 out of  2160 (1%)
+      SLICEs as Logic/ROM:     21 out of  2160 (1%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         13 out of  2160 (1%)
+   Number of LUT4s:         41 out of  4320 (1%)
+      Number used as logic LUTs:         15
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       26
+      Number used as shift registers:     0
+   Number of PIO sites used: 4 + 4(JTAG) out of 105 (8%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_c: 13 loads, 13 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  0
+   Number of LSRs:  1
+     Net cnt_23__N_51: 13 loads, 13 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net cnt_23__N_51: 13 loads
+     Net cnt_21: 4 loads
+     Net cnt_22: 4 loads
+     Net cnt_23: 4 loads
+     Net cnt_10: 3 loads
+     Net cnt_11: 3 loads
+     Net cnt_12: 3 loads
+     Net cnt_7: 3 loads
+     Net cnt_8: 3 loads
+     Net cnt_9: 3 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 170 MB
+
+Dumping design to file oscilloscope_impl1_map.ncd.
+
+ncd2vdb "oscilloscope_impl1_map.ncd" ".vdbs/oscilloscope_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+
+trce -f "oscilloscope_impl1.mt" -o "oscilloscope_impl1.tw1" "oscilloscope_impl1_map.ncd" "oscilloscope_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.1.454.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file oscilloscope_impl1_map.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454.2
+Sat Feb 19 23:09:41 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o oscilloscope_impl1.tw1 -gui oscilloscope_impl1_map.ncd oscilloscope_impl1.prf 
+Design file:     oscilloscope_impl1_map.ncd
+Preference file: oscilloscope_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 247  Score: 745888
+Cumulative negative slack: 745888
+
+Constraints cover 612 paths, 1 nets, and 119 connections (82.64% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454.2
+Sat Feb 19 23:09:41 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o oscilloscope_impl1.tw1 -gui oscilloscope_impl1_map.ncd oscilloscope_impl1.prf 
+Design file:     oscilloscope_impl1_map.ncd
+Preference file: oscilloscope_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 612 paths, 1 nets, and 119 connections (82.64% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 247 (setup), 0 (hold)
+Score: 745888 (setup), 0 (hold)
+Cumulative negative slack: 745888 (745888+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 136 MB
+
+
+ldbanno "oscilloscope_impl1_map.ncd" -n Verilog -o "oscilloscope_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.12.1.454.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the oscilloscope_impl1_map design file.
+
+
+Loading design for application ldbanno from file oscilloscope_impl1_map.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design oscilloscope_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file oscilloscope_impl1_mapvo.vo
+Writing SDF timing to file oscilloscope_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 112 MB
+
+ldbanno "oscilloscope_impl1_map.ncd" -n VHDL -o "oscilloscope_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.12.1.454.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the oscilloscope_impl1_map design file.
+
+
+Loading design for application ldbanno from file oscilloscope_impl1_map.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design oscilloscope_impl1_map.ncd into .ldb format.
+Writing VHDL netlist to file oscilloscope_impl1_mapvho.vho
+Writing SDF timing to file oscilloscope_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 112 MB
+
+mpartrce -p "oscilloscope_impl1.p2t" -f "oscilloscope_impl1.p3t" -tf "oscilloscope_impl1.pt" "oscilloscope_impl1_map.ncd" "oscilloscope_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "oscilloscope_impl1_map.ncd"
+Sat Feb 19 23:09:42 2022
+
+PAR: Place And Route Diamond (64-bit) 3.12.1.454.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 oscilloscope_impl1_map.ncd oscilloscope_impl1.dir/5_1.ncd oscilloscope_impl1.prf
+Preference file: oscilloscope_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file oscilloscope_impl1_map.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    4+4(JTAG)/280     3% used
+                   4+4(JTAG)/105     8% bonded
+
+   SLICE             21/2160         <1% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 77
+Number of Connections: 144
+
+Pin Constraint Summary:
+   4 out of 4 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 13)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    cnt_23__N_51 (driver: SLICE_14, clk load #: 0, sr load #: 13, ce load #: 0)
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..............
+Placer score = 24953.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  24887
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 13
+  SECONDARY "cnt_23__N_51" from F0 on comp "SLICE_14" on site "R10C30C", clk load = 0, ce load = 0, sr load = 13
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   4 + 4(JTAG) out of 280 (2.9%) PIO sites used.
+   4 + 4(JTAG) out of 105 (7.6%) bonded PIO sites used.
+   Number of PIO comps: 4; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 26 (  0%) | -          | -         |
+| 1        | 3 / 26 ( 11%) | 3.3V       | -         |
+| 2        | 0 / 28 (  0%) | -          | -         |
+| 3        | 0 / 7 (  0%)  | -          | -         |
+| 4        | 0 / 8 (  0%)  | -          | -         |
+| 5        | 1 / 10 ( 10%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 1 secs 
+
+Dumping design to file oscilloscope_impl1.dir/5_1.ncd.
+
+0 connections routed; 144 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 3 secs 
+
+Start NBR router at Sat Feb 19 23:09:45 CST 2022
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at Sat Feb 19 23:09:45 CST 2022
+
+Start NBR section for initial routing at Sat Feb 19 23:09:45 CST 2022
+Level 1, iteration 1
+1(0.00%) conflict; 74(51.39%) untouched conns; 186508 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5.469ns/-186.509ns; real time: 3 secs 
+Level 2, iteration 1
+2(0.00%) conflicts; 68(47.22%) untouched conns; 186362 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5.452ns/-186.363ns; real time: 3 secs 
+Level 3, iteration 1
+3(0.00%) conflicts; 39(27.08%) untouched conns; 128721 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.144ns/-128.721ns; real time: 3 secs 
+Level 4, iteration 1
+3(0.00%) conflicts; 0(0.00%) untouched conn; 120762 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.939ns/-120.762ns; real time: 3 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at Sat Feb 19 23:09:45 CST 2022
+Level 1, iteration 1
+4(0.00%) conflicts; 1(0.69%) untouched conn; 120938 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.945ns/-120.939ns; real time: 3 secs 
+Level 4, iteration 1
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 3
+3(0.00%) conflicts; 0(0.00%) untouched conn; 122899 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.951ns/-122.900ns; real time: 3 secs 
+Level 4, iteration 4
+2(0.00%) conflicts; 0(0.00%) untouched conn; 122899 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.951ns/-122.900ns; real time: 3 secs 
+Level 4, iteration 5
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 6
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 7
+3(0.00%) conflicts; 0(0.00%) untouched conn; 122899 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.951ns/-122.900ns; real time: 3 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 122899 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.951ns/-122.900ns; real time: 3 secs 
+Level 4, iteration 9
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 10
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 11
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 12
+2(0.00%) conflicts; 0(0.00%) untouched conn; 123697 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.993ns/-123.698ns; real time: 3 secs 
+Level 4, iteration 13
+2(0.00%) conflicts; 0(0.00%) untouched conn; 125084 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.066ns/-125.085ns; real time: 3 secs 
+Level 4, iteration 14
+2(0.00%) conflicts; 0(0.00%) untouched conn; 125084 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.066ns/-125.085ns; real time: 3 secs 
+Level 4, iteration 15
+2(0.00%) conflicts; 0(0.00%) untouched conn; 127080 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.171ns/-127.080ns; real time: 3 secs 
+Level 4, iteration 16
+4(0.00%) conflicts; 0(0.00%) untouched conn; 127080 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.171ns/-127.080ns; real time: 3 secs 
+Level 4, iteration 17
+1(0.00%) conflict; 0(0.00%) untouched conn; 131850 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.324ns/-131.851ns; real time: 3 secs 
+Level 4, iteration 18
+0(0.00%) conflict; 0(0.00%) untouched conn; 131850 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.324ns/-131.851ns; real time: 3 secs 
+
+Start NBR section for performance tuning (iteration 1) at Sat Feb 19 23:09:45 CST 2022
+Level 4, iteration 1
+3(0.00%) conflicts; 0(0.00%) untouched conn; 123270 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.951ns/-123.271ns; real time: 3 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 129636 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.250ns/-129.637ns; real time: 3 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 133083 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.379ns/-133.084ns; real time: 3 secs 
+
+Start NBR section for re-routing at Sat Feb 19 23:09:45 CST 2022
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 132221 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.324ns/-132.222ns; real time: 3 secs 
+
+Start NBR section for post-routing at Sat Feb 19 23:09:45 CST 2022
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 39 (27.08%)
+  Estimated worst slack<setup> : -4.324ns
+  Timing score<setup> : 600138
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 3 secs 
+Total REAL time: 3 secs 
+Completely routed.
+End of route.  144 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 600138 
+
+Dumping design to file oscilloscope_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -4.324
+PAR_SUMMARY::Timing score<setup/<ns>> = 600.138
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 3 secs 
+Total REAL time to completion: 4 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "oscilloscope_impl1.pt" -o "oscilloscope_impl1.twr" "oscilloscope_impl1.ncd" "oscilloscope_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.1.454.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454.2
+Sat Feb 19 23:09:49 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o oscilloscope_impl1.twr -gui oscilloscope_impl1.ncd oscilloscope_impl1.prf 
+Design file:     oscilloscope_impl1.ncd
+Preference file: oscilloscope_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 225  Score: 600138
+Cumulative negative slack: 600138
+
+Constraints cover 612 paths, 1 nets, and 119 connections (82.64% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454.2
+Sat Feb 19 23:09:49 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o oscilloscope_impl1.twr -gui oscilloscope_impl1.ncd oscilloscope_impl1.prf 
+Design file:     oscilloscope_impl1.ncd
+Preference file: oscilloscope_impl1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 612 paths, 1 nets, and 119 connections (82.64% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 225 (setup), 0 (hold)
+Score: 600138 (setup), 0 (hold)
+Cumulative negative slack: 600138 (600138+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 134 MB
+
+
+iotiming  "oscilloscope_impl1.ncd" "oscilloscope_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.12.1.454.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+ibisgen "oscilloscope_impl1.pad" "/usr/local/diamond/3.12/cae_library/ibis/machxo2.ibs"   
+IBIS Models Generator: Lattice Diamond (64-bit) 3.12.1.454.2
+
+Sat Feb 19 23:09:50 2022
+
+Comp: clk
+ Site: C1
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: led1
+ Site: N13
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led2
+ Site: M12
+ Type: OUT
+ IO_TYPE=LVCMOS33 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: rst_n
+ Site: L14
+ Type: IN
+ IO_TYPE=LVCMOS33 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Created design models.
+
+
+Generating: /home/cody/Project/FPGA-ADC/oscilloscope/impl1/IBIS/oscilloscope_impl1.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />
+
+ldbanno "oscilloscope_impl1.ncd" -n Verilog  -o "oscilloscope_impl1_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 3.12.1.454.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the oscilloscope_impl1 design file.
+
+
+Loading design for application ldbanno from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design oscilloscope_impl1.ncd into .ldb format.
+Loading preferences from oscilloscope_impl1.prf.
+Writing Verilog netlist to file oscilloscope_impl1_vo.vo
+Writing SDF timing to file oscilloscope_impl1_vo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 116 MB
+
+ldbanno "oscilloscope_impl1.ncd" -n VHDL -o "oscilloscope_impl1_vho.vho"         -w -neg 
+ldbanno: version Diamond (64-bit) 3.12.1.454.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the oscilloscope_impl1 design file.
+
+
+Loading design for application ldbanno from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design oscilloscope_impl1.ncd into .ldb format.
+Loading preferences from oscilloscope_impl1.prf.
+Writing VHDL netlist to file oscilloscope_impl1_vho.vho
+Writing SDF timing to file oscilloscope_impl1_vho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 116 MB
+
+tmcheck -par "oscilloscope_impl1.par" 
+
+bitgen -f "oscilloscope_impl1.t2b" -w "oscilloscope_impl1.ncd"  "oscilloscope_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.1.454.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from oscilloscope_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "oscilloscope_impl1.bit".
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 400 MB
+
+tmcheck -par "oscilloscope_impl1.par" 
+
+bitgen -f "oscilloscope_impl1.t2b" -w "oscilloscope_impl1.ncd"  -jedec "oscilloscope_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.1.454.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from oscilloscope_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "oscilloscope_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 
+Total CPU Time: 3 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 400 MB

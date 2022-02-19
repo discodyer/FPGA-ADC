@@ -1,0 +1,11 @@
+Selecting top level module template
+@N: CG364 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Synthesizing module template in library work.
+Running optimization stage 1 on template .......
+Finished optimization stage 1 on template (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+Running optimization stage 2 on template .......
+Finished optimization stage 2 on template (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/layer0.rt.csv
+

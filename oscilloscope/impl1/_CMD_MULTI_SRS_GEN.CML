@@ -1,0 +1,1 @@
+ -link  -multisrs  /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_comp.srs  -osyn  /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_mult.srs  -log  /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synlog/impl1_multi_srs_gen.srr 

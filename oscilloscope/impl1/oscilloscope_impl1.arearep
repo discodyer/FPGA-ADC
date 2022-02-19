@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell template.TECH
+Register bits:  24 of 4635 (0.518%)
+I/O cells:      4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13          100.0
+                            FD1S3IX        24          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                               LUT4        15          100.0
+                                 OB         2          100.0
+                              TOTAL        57

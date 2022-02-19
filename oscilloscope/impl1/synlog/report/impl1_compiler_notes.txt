@@ -1,0 +1,10 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N|stack limit increased to max
+@N: CG364 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Synthesizing module template in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Selected library: work cell: template view verilog as top level
+@N: NF107 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Selected library: work cell: template view verilog as top level
+

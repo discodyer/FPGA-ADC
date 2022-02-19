@@ -1,0 +1,129 @@
+# Sat Feb 19 23:40:21 2022
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Arch Linux
+Hostname: Surchlinux
+max virtual memory: unlimited (bytes)
+max user processes: 31420
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version map202103lat, Build 070R, Built Oct  6 2021 10:07:08, @4007006
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 199MB peak: 199MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 210MB peak: 210MB)
+
+@A: MF827 |No constraint file specified.
+@L: /home/cody/Project/FPGA-ADC/oscilloscope/impl1/impl1_scck.rpt 
+See clock summary report "/home/cody/Project/FPGA-ADC/oscilloscope/impl1/impl1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 210MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 210MB peak: 210MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 215MB peak: 215MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 217MB peak: 217MB)
+
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=10 on top level netlist template 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+
+
+Clock Summary
+******************
+
+          Start            Requested     Requested     Clock        Clock                     Clock
+Level     Clock            Frequency     Period        Type         Group                     Load 
+---------------------------------------------------------------------------------------------------
+0 -       template|clk     349.7 MHz     2.860         inferred     Autoconstr_clkgroup_0     24   
+===================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                 Clock     Source        Clock Pin       Non-clock Pin     Non-clock Pin
+Clock            Load      Pin           Seq Example     Seq Example       Comb Example 
+----------------------------------------------------------------------------------------
+template|clk     24        clk(port)     cnt[23:0].C     -                 -            
+========================================================================================
+
+@W: MT529 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Found inferred clock template|clk which controls 24 sequential elements including cnt[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+For details review file gcc_ICG_report.rpt
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 24 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       clk                 port                   24         cnt[23:0]      
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Feb 19 23:40:22 2022
+
+###########################################################]

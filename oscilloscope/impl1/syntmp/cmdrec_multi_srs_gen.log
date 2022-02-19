@@ -1,0 +1,8 @@
+/usr/local/diamond/3.12/synpbase/bin/syn_nfilter  -link  -multisrs  /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_comp.srs  -osyn  /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_mult.srs  -log  /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synlog/impl1_multi_srs_gen.srr 
+relcom:/usr/local/diamond/3.12/synpbase/bin/syn_nfilter -link -multisrs ../synwork/impl1_comp.srs -osyn ../synwork/impl1_mult.srs -log ../synlog/impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/impl1_comp.srs|io:i|time:1645285219|size:2076|exec:0|csum:60EAAA9BAAE227EE620119C9D2BA0BD5
+file:../synwork/impl1_mult.srs|io:o|time:1645285221|size:1962|exec:0|csum:
+file:../synlog/impl1_multi_srs_gen.srr|io:o|time:1645285221|size:1394|exec:0|csum:
+file:/usr/local/diamond/3.12/synpbase/linux_a_64/syn_nfilter|io:i|time:1643088093|size:12428832|exec:1|csum:AF09A3A5B956510167C7A871BAD09178
+file:/usr/local/diamond/3.12/synpbase/bin/syn_nfilter|io:i|time:1643088093|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0

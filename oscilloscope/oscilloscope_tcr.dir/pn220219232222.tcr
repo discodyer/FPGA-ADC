@@ -1,0 +1,12 @@
+#Start recording tcl command: 2/19/2022 23:03:09
+#Project Location: /home/cody/Project/FPGA-ADC/oscilloscope; Project name: oscilloscope
+prj_project new -name "oscilloscope" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_src add "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb.v"
+prj_src syn_sim -src "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb.v" SimulateOnly
+prj_src add "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.spf"
+prj_src add "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.spf"
+#Stop recording: 2/19/2022 23:22:22

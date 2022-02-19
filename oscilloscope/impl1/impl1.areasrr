@@ -1,0 +1,20 @@
+----------------------------------------------------------------------
+Report for cell template.verilog
+
+Register bits: 32 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       18       100.0
+                            FD1S3DX       32       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                INV        3       100.0
+                                 OB        2       100.0
+                           ORCALUT4       34       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL            95           

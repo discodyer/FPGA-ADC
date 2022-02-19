@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 3.12.1.454.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Feb 19 23:09:42 2022
+
+/usr/local/diamond/3.12/ispfpga/bin/lin64/par -f oscilloscope_impl1.p2t
+oscilloscope_impl1_map.ncd oscilloscope_impl1.dir oscilloscope_impl1.prf -gui
+
+
+Preference file: oscilloscope_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -4.324       600138       0.379        0            04           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 4 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

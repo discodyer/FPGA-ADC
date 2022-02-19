@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1645285353"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1645285353">
+            <Task name="Map" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1645285353"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1645285353">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1645285353"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1645285353"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="0" build_time="1645283617">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1645283617"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1645283617"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1645283617"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1645283617"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/oscilloscope_impl1_map.vdb" last_build_time="1645283380" last_build_size="41306"/>
+        <Report name="IBIS/oscilloscope_impl1.ibs" last_build_time="1645283390" last_build_size="65447"/>
+        <Report name="oscilloscope_impl1.bgn" last_build_time="1645283403" last_build_size="4231"/>
+        <Report name="oscilloscope_impl1.bit" last_build_time="1645283398" last_build_size="16375"/>
+        <Report name="oscilloscope_impl1.ior" last_build_time="1645283390" last_build_size="1826"/>
+        <Report name="oscilloscope_impl1.jed" last_build_time="1645283403" last_build_size="842553"/>
+        <Report name="oscilloscope_impl1.lsedata" last_build_time="1645283248" last_build_size="29089"/>
+        <Report name="oscilloscope_impl1.ncd" last_build_time="1645283388" last_build_size="39454"/>
+        <Report name="oscilloscope_impl1.ngd" last_build_time="1645283248" last_build_size="35705"/>
+        <Report name="oscilloscope_impl1.tw1" last_build_time="1645283381" last_build_size="9745"/>
+        <Report name="oscilloscope_impl1.twr" last_build_time="1645283389" last_build_size="47282"/>
+        <Report name="oscilloscope_impl1_map.ncd" last_build_time="1645283380" last_build_size="29258"/>
+        <Report name="oscilloscope_impl1_mapvho.sdf" last_build_time="1645283382" last_build_size="26496"/>
+        <Report name="oscilloscope_impl1_mapvho.vho" last_build_time="1645283382" last_build_size="220546"/>
+        <Report name="oscilloscope_impl1_mapvo.sdf" last_build_time="1645283382" last_build_size="26218"/>
+        <Report name="oscilloscope_impl1_mapvo.vo" last_build_time="1645283382" last_build_size="28866"/>
+        <Report name="oscilloscope_impl1_vho.sdf" last_build_time="1645283391" last_build_size="29852"/>
+        <Report name="oscilloscope_impl1_vho.vho" last_build_time="1645283391" last_build_size="222310"/>
+        <Report name="oscilloscope_impl1_vo.sdf" last_build_time="1645283390" last_build_size="29552"/>
+        <Report name="oscilloscope_impl1_vo.vo" last_build_time="1645283390" last_build_size="29270"/>
+    </Strategy>
+</BuildStatus>

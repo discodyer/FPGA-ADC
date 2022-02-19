@@ -1,0 +1,8 @@
+i clk
+m 0 0
+u 1 24
+p {p:clk}{t:cnt[23:0].C}
+e ckid0_0 {t:cnt[23:0].C} dffr
+c ckid0_0 {p:clk} port Unsupported/too complex instance on clock path
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

@@ -1,0 +1,10 @@
+---------------------------------------------------
+Report for cell template
+   Instance path: template
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.00        100.0
+                                  LUT4	      15.00        100.0
+                                 IOBUF	          4        100.0
+                                PFUREG	         24        100.0
+                                RIPPLE	         13        100.0

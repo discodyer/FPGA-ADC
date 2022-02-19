@@ -1,0 +1,1 @@
+-link -encrypt -top NoName -osyn /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_comp.srs /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/layer0.srs  -jobname linker  

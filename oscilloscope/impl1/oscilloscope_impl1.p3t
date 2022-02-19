@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "oscilloscope_impl1.log"
+-o "oscilloscope_impl1.csv"
+-pr "oscilloscope_impl1.prf"

@@ -1,0 +1,1 @@
+/usr/local/diamond/3.12/bin/lin64/moduleparser -PROJ LED_Blink_tb -pf /usr/local/diamond/3.12/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pf /usr/local/diamond/3.12/cae_library/synthesis/verilog/machxo2.v -pkg /usr/local/diamond/3.12/cae_library/vhdl_packages/vdbs -lst /home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/source_files.lst

@@ -1,0 +1,62 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb
+vLED_shining_tb
+Z1 !s110 1645284269
+!i10b 1
+!s100 YNBF8MQMNeEVWmV^EYJXT2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVo03Ngm@fmD[ZfK`P8O?M1
+R0
+Z3 w1645284264
+8/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.v
+F/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.v
+!i122 1
+L0 2 25
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OT;L;2020.3;71
+r1
+!s85 0
+31
+Z6 !s108 1645284269.000000
+!s107 /home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.v|
+!s90 +incdir+/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb|-work|work|/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.v|
+!s101 -O0
+!i113 1
+Z7 o-work work -O0
+Z8 !s92 +incdir+/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb -work work -O0
+Z9 tCvgOpt 0
+n@l@e@d_shining_tb
+vtemplate
+R1
+!i10b 1
+!s100 jCQLK:iZ7PdeXfDLoXOAI3
+R2
+IZ9QEB1Ka=fQiHmcW]Ni?20
+R0
+R3
+8/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink.v
+F/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink.v
+!i122 0
+L0 1 23
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink.v|
+!s90 +incdir+/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb|-work|work|/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9

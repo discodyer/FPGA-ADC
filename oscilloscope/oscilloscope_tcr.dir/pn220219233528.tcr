@@ -1,0 +1,5 @@
+#Start recording tcl command: 2/19/2022 23:22:57
+#Project Location: /home/cody/Project/FPGA-ADC/oscilloscope; Project name: oscilloscope
+prj_project open "/home/cody/Project/FPGA-ADC/oscilloscope/oscilloscope.ldf"
+prj_src add "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.spf"
+#Stop recording: 2/19/2022 23:35:28

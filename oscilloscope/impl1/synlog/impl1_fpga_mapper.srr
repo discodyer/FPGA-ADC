@@ -1,0 +1,526 @@
+# Sat Feb 19 23:40:23 2022
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Arch Linux
+Hostname: Surchlinux
+max virtual memory: unlimited (bytes)
+max user processes: 31420
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202103lat, Build 070R, Built Oct  6 2021 10:07:08, @4007006
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 199MB peak: 199MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 210MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 210MB peak: 210MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 214MB peak: 214MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 216MB peak: 216MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 244MB peak: 244MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 245MB peak: 245MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 245MB peak: 245MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.09ns		  36 /        24
+   2		0h:00m:00s		    -2.09ns		  36 /        24
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[0] (in view: work.template(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[2] (in view: work.template(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[1] (in view: work.template(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[3] (in view: work.template(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[7] (in view: work.template(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[4] (in view: work.template(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[6] (in view: work.template(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":12:0:12:5|Replicating instance cnt[5] (in view: work.template(verilog)) with 4 loads 1 time to improve timing.
+Timing driven replication report
+Added 8 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+   3		0h:00m:00s		    -2.02ns		  37 /        32
+
+
+   4		0h:00m:00s		    -2.02ns		  37 /        32
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 246MB peak: 246MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+
+Writing Analyst data base /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 247MB peak: 247MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: /home/cody/Project/FPGA-ADC/oscilloscope/impl1/impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 251MB peak: 251MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 251MB peak: 251MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 251MB peak: 251MB)
+
+@W: MT420 |Found inferred clock template|clk with period 5.49ns. Please declare a user-defined clock on port clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sat Feb 19 23:40:24 2022
+#
+
+
+Top view:               template
+Requested Frequency:    182.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.969
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+template|clk       182.1 MHz     154.8 MHz     5.491         6.460         -0.969     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------
+template|clk  template|clk  |  5.491       -0.969  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: template|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                Starting                                             Arrival           
+Instance        Reference        Type        Pin     Net             Time        Slack 
+                Clock                                                                  
+---------------------------------------------------------------------------------------
+cnt_fast[0]     template|clk     FD1S3DX     Q       cnt_fast[0]     1.108       -0.969
+cnt_fast[1]     template|clk     FD1S3DX     Q       cnt_fast[1]     0.972       -0.833
+cnt_fast[2]     template|clk     FD1S3DX     Q       cnt_fast[2]     0.972       -0.833
+cnt_fast[3]     template|clk     FD1S3DX     Q       cnt_fast[3]     0.972       -0.833
+cnt[1]          template|clk     FD1S3DX     Q       cnt[1]          1.108       -0.826
+cnt[2]          template|clk     FD1S3DX     Q       cnt[2]          1.108       -0.826
+cnt[3]          template|clk     FD1S3DX     Q       cnt[3]          1.108       -0.826
+cnt_fast[7]     template|clk     FD1S3DX     Q       cnt_fast[7]     1.044       -0.762
+cnt[10]         template|clk     FD1S3DX     Q       cnt[10]         1.180       -0.755
+cnt[8]          template|clk     FD1S3DX     Q       cnt[8]          1.148       -0.723
+=======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                             Required           
+Instance     Reference        Type        Pin     Net             Time         Slack 
+             Clock                                                                   
+-------------------------------------------------------------------------------------
+cnt[17]      template|clk     FD1S3DX     D       cnt_3[17]       5.580        -0.969
+cnt[18]      template|clk     FD1S3DX     D       cnt_3[18]       5.580        -0.969
+cnt[16]      template|clk     FD1S3DX     D       cnt_3[16]       5.580        -0.826
+cnt[23]      template|clk     FD1S3DX     D       cnt_3[23]       5.580        -0.826
+cnt[21]      template|clk     FD1S3DX     D       cnt_3[21]       5.580        -0.683
+cnt[11]      template|clk     FD1S3DX     D       cnt_3[11]       5.580        -0.541
+cnt[12]      template|clk     FD1S3DX     D       cnt_3[12]       5.580        -0.541
+cnt[20]      template|clk     FD1S3DX     D       cnt_3[20]       5.580        -0.541
+cnt[15]      template|clk     FD1S3DX     D       un4_cnt[15]     5.386        -0.404
+cnt[9]       template|clk     FD1S3DX     D       cnt_3[9]        5.580        -0.398
+=====================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.491
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.580
+
+    - Propagation time:                      6.549
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.969
+
+    Number of logic level(s):                9
+    Starting point:                          cnt_fast[0] / Q
+    Ending point:                            cnt[18] / D
+    The start point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+    The end   point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+cnt_fast[0]                  FD1S3DX      Q        Out     1.108     1.108 r     -         
+cnt_fast[0]                  Net          -        -       -         -           3         
+un4_cnt_axb_0_par_0          ORCALUT4     A        In      0.000     1.108 r     -         
+un4_cnt_axb_0_par_0          ORCALUT4     Z        Out     1.017     2.125 r     -         
+un4_cnt_axb_0_par_0          Net          -        -       -         -           1         
+un4_cnt_axb_0_par_1          CCU2D        A1       In      0.000     2.125 r     -         
+un4_cnt_axb_0_par_1          CCU2D        COUT     Out     1.544     3.669 r     -         
+un4_cnt_axb_0_par_1_COUT     Net          -        -       -         -           1         
+un4_cnt_axb_4_par_1          CCU2D        CIN      In      0.000     3.669 r     -         
+un4_cnt_axb_4_par_1          CCU2D        COUT     Out     0.143     3.812 r     -         
+un4_cnt_cry_8                Net          -        -       -         -           1         
+un4_cnt_cry_9_0              CCU2D        CIN      In      0.000     3.812 r     -         
+un4_cnt_cry_9_0              CCU2D        COUT     Out     0.143     3.955 r     -         
+un4_cnt_cry_10               Net          -        -       -         -           1         
+un4_cnt_cry_11_0             CCU2D        CIN      In      0.000     3.955 r     -         
+un4_cnt_cry_11_0             CCU2D        COUT     Out     0.143     4.098 r     -         
+un4_cnt_cry_12               Net          -        -       -         -           1         
+un4_cnt_cry_13_0             CCU2D        CIN      In      0.000     4.098 r     -         
+un4_cnt_cry_13_0             CCU2D        COUT     Out     0.143     4.240 r     -         
+un4_cnt_cry_14               Net          -        -       -         -           1         
+un4_cnt_cry_15_0             CCU2D        CIN      In      0.000     4.240 r     -         
+un4_cnt_cry_15_0             CCU2D        COUT     Out     0.143     4.383 r     -         
+un4_cnt_cry_16               Net          -        -       -         -           1         
+un4_cnt_cry_17_0             CCU2D        CIN      In      0.000     4.383 r     -         
+un4_cnt_cry_17_0             CCU2D        S1       Out     1.549     5.932 r     -         
+un4_cnt_cry_17_0_S1          Net          -        -       -         -           1         
+cnt_RNO[18]                  ORCALUT4     B        In      0.000     5.932 r     -         
+cnt_RNO[18]                  ORCALUT4     Z        Out     0.617     6.549 r     -         
+cnt_3[18]                    Net          -        -       -         -           1         
+cnt[18]                      FD1S3DX      D        In      0.000     6.549 r     -         
+===========================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.491
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.580
+
+    - Propagation time:                      6.549
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.969
+
+    Number of logic level(s):                9
+    Starting point:                          cnt_fast[0] / Q
+    Ending point:                            cnt[17] / D
+    The start point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+    The end   point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+cnt_fast[0]                  FD1S3DX      Q        Out     1.108     1.108 r     -         
+cnt_fast[0]                  Net          -        -       -         -           3         
+un4_cnt_axb_0_par_0          ORCALUT4     A        In      0.000     1.108 r     -         
+un4_cnt_axb_0_par_0          ORCALUT4     Z        Out     1.017     2.125 r     -         
+un4_cnt_axb_0_par_0          Net          -        -       -         -           1         
+un4_cnt_axb_0_par_1          CCU2D        A1       In      0.000     2.125 r     -         
+un4_cnt_axb_0_par_1          CCU2D        COUT     Out     1.544     3.669 r     -         
+un4_cnt_axb_0_par_1_COUT     Net          -        -       -         -           1         
+un4_cnt_axb_4_par_1          CCU2D        CIN      In      0.000     3.669 r     -         
+un4_cnt_axb_4_par_1          CCU2D        COUT     Out     0.143     3.812 r     -         
+un4_cnt_cry_8                Net          -        -       -         -           1         
+un4_cnt_cry_9_0              CCU2D        CIN      In      0.000     3.812 r     -         
+un4_cnt_cry_9_0              CCU2D        COUT     Out     0.143     3.955 r     -         
+un4_cnt_cry_10               Net          -        -       -         -           1         
+un4_cnt_cry_11_0             CCU2D        CIN      In      0.000     3.955 r     -         
+un4_cnt_cry_11_0             CCU2D        COUT     Out     0.143     4.098 r     -         
+un4_cnt_cry_12               Net          -        -       -         -           1         
+un4_cnt_cry_13_0             CCU2D        CIN      In      0.000     4.098 r     -         
+un4_cnt_cry_13_0             CCU2D        COUT     Out     0.143     4.240 r     -         
+un4_cnt_cry_14               Net          -        -       -         -           1         
+un4_cnt_cry_15_0             CCU2D        CIN      In      0.000     4.240 r     -         
+un4_cnt_cry_15_0             CCU2D        COUT     Out     0.143     4.383 r     -         
+un4_cnt_cry_16               Net          -        -       -         -           1         
+un4_cnt_cry_17_0             CCU2D        CIN      In      0.000     4.383 r     -         
+un4_cnt_cry_17_0             CCU2D        S0       Out     1.549     5.932 r     -         
+un4_cnt_cry_17_0_S0          Net          -        -       -         -           1         
+cnt_RNO[17]                  ORCALUT4     B        In      0.000     5.932 r     -         
+cnt_RNO[17]                  ORCALUT4     Z        Out     0.617     6.549 r     -         
+cnt_3[17]                    Net          -        -       -         -           1         
+cnt[17]                      FD1S3DX      D        In      0.000     6.549 r     -         
+===========================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.491
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.580
+
+    - Propagation time:                      6.413
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.833
+
+    Number of logic level(s):                9
+    Starting point:                          cnt_fast[1] / Q
+    Ending point:                            cnt[18] / D
+    The start point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+    The end   point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+cnt_fast[1]                  FD1S3DX      Q        Out     0.972     0.972 r     -         
+cnt_fast[1]                  Net          -        -       -         -           1         
+un4_cnt_axb_0_par_0          ORCALUT4     B        In      0.000     0.972 r     -         
+un4_cnt_axb_0_par_0          ORCALUT4     Z        Out     1.017     1.989 r     -         
+un4_cnt_axb_0_par_0          Net          -        -       -         -           1         
+un4_cnt_axb_0_par_1          CCU2D        A1       In      0.000     1.989 r     -         
+un4_cnt_axb_0_par_1          CCU2D        COUT     Out     1.544     3.533 r     -         
+un4_cnt_axb_0_par_1_COUT     Net          -        -       -         -           1         
+un4_cnt_axb_4_par_1          CCU2D        CIN      In      0.000     3.533 r     -         
+un4_cnt_axb_4_par_1          CCU2D        COUT     Out     0.143     3.676 r     -         
+un4_cnt_cry_8                Net          -        -       -         -           1         
+un4_cnt_cry_9_0              CCU2D        CIN      In      0.000     3.676 r     -         
+un4_cnt_cry_9_0              CCU2D        COUT     Out     0.143     3.819 r     -         
+un4_cnt_cry_10               Net          -        -       -         -           1         
+un4_cnt_cry_11_0             CCU2D        CIN      In      0.000     3.819 r     -         
+un4_cnt_cry_11_0             CCU2D        COUT     Out     0.143     3.962 r     -         
+un4_cnt_cry_12               Net          -        -       -         -           1         
+un4_cnt_cry_13_0             CCU2D        CIN      In      0.000     3.962 r     -         
+un4_cnt_cry_13_0             CCU2D        COUT     Out     0.143     4.104 r     -         
+un4_cnt_cry_14               Net          -        -       -         -           1         
+un4_cnt_cry_15_0             CCU2D        CIN      In      0.000     4.104 r     -         
+un4_cnt_cry_15_0             CCU2D        COUT     Out     0.143     4.247 r     -         
+un4_cnt_cry_16               Net          -        -       -         -           1         
+un4_cnt_cry_17_0             CCU2D        CIN      In      0.000     4.247 r     -         
+un4_cnt_cry_17_0             CCU2D        S1       Out     1.549     5.796 r     -         
+un4_cnt_cry_17_0_S1          Net          -        -       -         -           1         
+cnt_RNO[18]                  ORCALUT4     B        In      0.000     5.796 r     -         
+cnt_RNO[18]                  ORCALUT4     Z        Out     0.617     6.413 r     -         
+cnt_3[18]                    Net          -        -       -         -           1         
+cnt[18]                      FD1S3DX      D        In      0.000     6.413 r     -         
+===========================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.491
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.580
+
+    - Propagation time:                      6.413
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.833
+
+    Number of logic level(s):                9
+    Starting point:                          cnt_fast[2] / Q
+    Ending point:                            cnt[18] / D
+    The start point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+    The end   point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+cnt_fast[2]                  FD1S3DX      Q        Out     0.972     0.972 r     -         
+cnt_fast[2]                  Net          -        -       -         -           1         
+un4_cnt_axb_0_par_0          ORCALUT4     C        In      0.000     0.972 r     -         
+un4_cnt_axb_0_par_0          ORCALUT4     Z        Out     1.017     1.989 r     -         
+un4_cnt_axb_0_par_0          Net          -        -       -         -           1         
+un4_cnt_axb_0_par_1          CCU2D        A1       In      0.000     1.989 r     -         
+un4_cnt_axb_0_par_1          CCU2D        COUT     Out     1.544     3.533 r     -         
+un4_cnt_axb_0_par_1_COUT     Net          -        -       -         -           1         
+un4_cnt_axb_4_par_1          CCU2D        CIN      In      0.000     3.533 r     -         
+un4_cnt_axb_4_par_1          CCU2D        COUT     Out     0.143     3.676 r     -         
+un4_cnt_cry_8                Net          -        -       -         -           1         
+un4_cnt_cry_9_0              CCU2D        CIN      In      0.000     3.676 r     -         
+un4_cnt_cry_9_0              CCU2D        COUT     Out     0.143     3.819 r     -         
+un4_cnt_cry_10               Net          -        -       -         -           1         
+un4_cnt_cry_11_0             CCU2D        CIN      In      0.000     3.819 r     -         
+un4_cnt_cry_11_0             CCU2D        COUT     Out     0.143     3.962 r     -         
+un4_cnt_cry_12               Net          -        -       -         -           1         
+un4_cnt_cry_13_0             CCU2D        CIN      In      0.000     3.962 r     -         
+un4_cnt_cry_13_0             CCU2D        COUT     Out     0.143     4.104 r     -         
+un4_cnt_cry_14               Net          -        -       -         -           1         
+un4_cnt_cry_15_0             CCU2D        CIN      In      0.000     4.104 r     -         
+un4_cnt_cry_15_0             CCU2D        COUT     Out     0.143     4.247 r     -         
+un4_cnt_cry_16               Net          -        -       -         -           1         
+un4_cnt_cry_17_0             CCU2D        CIN      In      0.000     4.247 r     -         
+un4_cnt_cry_17_0             CCU2D        S1       Out     1.549     5.796 r     -         
+un4_cnt_cry_17_0_S1          Net          -        -       -         -           1         
+cnt_RNO[18]                  ORCALUT4     B        In      0.000     5.796 r     -         
+cnt_RNO[18]                  ORCALUT4     Z        Out     0.617     6.413 r     -         
+cnt_3[18]                    Net          -        -       -         -           1         
+cnt[18]                      FD1S3DX      D        In      0.000     6.413 r     -         
+===========================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.491
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.580
+
+    - Propagation time:                      6.413
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.833
+
+    Number of logic level(s):                9
+    Starting point:                          cnt_fast[3] / Q
+    Ending point:                            cnt[18] / D
+    The start point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+    The end   point is clocked by            template|clk [rising] (rise=0.000 fall=2.745 period=5.491) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+cnt_fast[3]                  FD1S3DX      Q        Out     0.972     0.972 r     -         
+cnt_fast[3]                  Net          -        -       -         -           1         
+un4_cnt_axb_0_par_0          ORCALUT4     D        In      0.000     0.972 r     -         
+un4_cnt_axb_0_par_0          ORCALUT4     Z        Out     1.017     1.989 r     -         
+un4_cnt_axb_0_par_0          Net          -        -       -         -           1         
+un4_cnt_axb_0_par_1          CCU2D        A1       In      0.000     1.989 r     -         
+un4_cnt_axb_0_par_1          CCU2D        COUT     Out     1.544     3.533 r     -         
+un4_cnt_axb_0_par_1_COUT     Net          -        -       -         -           1         
+un4_cnt_axb_4_par_1          CCU2D        CIN      In      0.000     3.533 r     -         
+un4_cnt_axb_4_par_1          CCU2D        COUT     Out     0.143     3.676 r     -         
+un4_cnt_cry_8                Net          -        -       -         -           1         
+un4_cnt_cry_9_0              CCU2D        CIN      In      0.000     3.676 r     -         
+un4_cnt_cry_9_0              CCU2D        COUT     Out     0.143     3.819 r     -         
+un4_cnt_cry_10               Net          -        -       -         -           1         
+un4_cnt_cry_11_0             CCU2D        CIN      In      0.000     3.819 r     -         
+un4_cnt_cry_11_0             CCU2D        COUT     Out     0.143     3.962 r     -         
+un4_cnt_cry_12               Net          -        -       -         -           1         
+un4_cnt_cry_13_0             CCU2D        CIN      In      0.000     3.962 r     -         
+un4_cnt_cry_13_0             CCU2D        COUT     Out     0.143     4.104 r     -         
+un4_cnt_cry_14               Net          -        -       -         -           1         
+un4_cnt_cry_15_0             CCU2D        CIN      In      0.000     4.104 r     -         
+un4_cnt_cry_15_0             CCU2D        COUT     Out     0.143     4.247 r     -         
+un4_cnt_cry_16               Net          -        -       -         -           1         
+un4_cnt_cry_17_0             CCU2D        CIN      In      0.000     4.247 r     -         
+un4_cnt_cry_17_0             CCU2D        S1       Out     1.549     5.796 r     -         
+un4_cnt_cry_17_0_S1          Net          -        -       -         -           1         
+cnt_RNO[18]                  ORCALUT4     B        In      0.000     5.796 r     -         
+cnt_RNO[18]                  ORCALUT4     Z        Out     0.617     6.413 r     -         
+cnt_3[18]                    Net          -        -       -         -           1         
+cnt[18]                      FD1S3DX      D        In      0.000     6.413 r     -         
+===========================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 251MB peak: 251MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 251MB peak: 251MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 32 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       4
+
+
+Details:
+CCU2D:          18
+FD1S3DX:        32
+GSR:            1
+IB:             2
+INV:            3
+OB:             2
+ORCALUT4:       34
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 251MB peak: 251MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Feb 19 23:40:24 2022
+
+###########################################################]

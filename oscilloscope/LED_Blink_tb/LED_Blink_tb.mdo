@@ -1,0 +1,17 @@
+if {![file exists "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.mpf"]} { 
+	project new "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb" LED_Blink_tb
+	project addfile "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink.v"
+	project addfile "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb  -work work  "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink.v"
+	vlog  +incdir+/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb  -work work  "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb.v"
+} else {
+	project open "/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink_tb/LED_Blink_tb"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  LED_shining_tb
+view wave
+add wave /*
+run 1000ns

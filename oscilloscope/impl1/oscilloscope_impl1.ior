@@ -1,0 +1,52 @@
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file oscilloscope_impl1.ncd.
+Design name: template
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: template
+// Package: CSBGA132
+// ncd File: oscilloscope_impl1.ncd
+// Version: Diamond (64-bit) 3.12.1.454.2
+// Written on Sat Feb 19 23:09:50 2022
+// M: Minimum Performance Grade
+// iotiming oscilloscope_impl1.ncd oscilloscope_impl1.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+led1  clk   R    17.934         4        3.335          M
+led2  clk   R    18.430         4        3.300          M

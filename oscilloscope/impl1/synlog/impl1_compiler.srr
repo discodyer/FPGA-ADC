@@ -1,0 +1,121 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Arch Linux
+Hostname: Surchlinux
+max virtual memory: unlimited (bytes)
+max user processes: 31420
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl1
+Synopsys HDL Compiler, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:23:04, @3930113
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Arch Linux
+Hostname: Surchlinux
+max virtual memory: unlimited (bytes)
+max user processes: 31420
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl1
+Synopsys Verilog Compiler, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:23:04, @3930113
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+
+@I::"/usr/local/diamond/3.12/synpbase/lib/lucent/machxo2.v" (library work)
+@I::"/usr/local/diamond/3.12/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v" (library work)
+@N|stack limit increased to max
+Verilog syntax check successful!
+Selecting top level module template
+@N: CG364 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Synthesizing module template in library work.
+Running optimization stage 1 on template .......
+Finished optimization stage 1 on template (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+Running optimization stage 2 on template .......
+Finished optimization stage 2 on template (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Feb 19 23:40:19 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Arch Linux
+Hostname: Surchlinux
+max virtual memory: unlimited (bytes)
+max user processes: 31420
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:23:04, @3930113
+
+@N|Running in 64-bit mode
+@N: NF107 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Selected library: work cell: template view verilog as top level
+@N: NF107 :"/home/cody/Project/FPGA-ADC/oscilloscope/LED_Blink.v":1:7:1:14|Selected library: work cell: template view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 123MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Feb 19 23:40:19 2022
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/cody/Project/FPGA-ADC/oscilloscope/impl1/synwork/impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 41MB peak: 41MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Feb 19 23:40:19 2022
+
+###########################################################]
